@@ -1,0 +1,16 @@
+{
+  "name": "in.firststep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node api/myapi.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
