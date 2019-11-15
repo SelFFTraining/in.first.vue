@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:5000/api/task';
+// const BASE_URL = 'http://localhost:5000/api/task';
+const BASE_URL = '/api/task';
 
 let fetch = function ({url = BASE_URL, method = 'get', headers, params, data}) {
   return axios[method](url, {headers, data, params});
