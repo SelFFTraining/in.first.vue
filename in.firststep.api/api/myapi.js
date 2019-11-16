@@ -12,7 +12,9 @@ let taskList = {tasks: []};
 app.get('/api/task', (req, res) =>{
     res.send(taskList);
 });
-
+app.get('/sw.js', (req, res) =>{
+    res.sendFile(path.join(__dirname, '../sw.js'))
+});
 app.post('/api/task', (req, res) =>{
     taskList.tasks.push(req.body);
     res.status(201).send(req.body);

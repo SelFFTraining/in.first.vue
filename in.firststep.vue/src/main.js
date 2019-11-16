@@ -5,7 +5,14 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
-
+if('serviceWorker' in navigator) {
+  try {
+    navigator.serviceWorker.register('../sw.js');
+    console.log('Service worker registered successfully');
+  }catch (e) {
+    console.log('Error while registering service worker '+e);
+  }
+}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
